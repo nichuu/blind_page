@@ -7,8 +7,6 @@
   <script src="https://unpkg.com/aframe-proxy-event-component@2.1.0/dist/aframe-proxy-event-component.min.js"></script>
   <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
-  <link rel="shortcut icon" type="image/png" href="assets/favicon.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
   <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
@@ -29,14 +27,11 @@
      <a-scene>
      <a-assets>
        <a-asset-item id="spaceman" src="spaceman_model/scene.gltf"></a-asset-item>
-       <a-asset-item id="bot" response-type="arraybuffer" src="skull/bot.glb"></a-asset-item>
-       <a-asset-item id="christ" response-type="arraybuffer" src="skull/christ.glb"></a-asset-item>
        <a-asset-item id="bug" response-type="arraybuffer" src="skull/bug.glb"></a-asset-item>
        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/ngokevin/kframe/master/components/text-geometry/lib/helvetiker_regular.typeface.json"></a-asset-item>
     </a-assets>
 
- <a-entity   position="40 3 -7" rotation="0 180 360"  scale="0.006 0.006 0.006" gltf-model="#bot" animation="property: position; to: -40 7 -4;  loop: true; dur: 20000"animation__2="property: rotation; to: 360 360 360; loop: true; dur: 6000"  animation-mixer="clip:Take 001; loop:2; crossFadeDuration: 1"></a-entity>
-   <!--<a-entity   position="-10 -80 -40" rotation="0 0 0"  scale="15 15 9" gltf-model="#christ"  animation-mixer="clip:Take 01; loop:2; crossFadeDuration: 1"></a-entity>-->
+
  <a-entity   position="0 1 -12" rotation="0 0 0"  scale=".9 .9 .9" gltf-model="#bug" animation="property: position; to: 0 1 -5;  dur: 5000"  animation-mixer="clip:SMALL BUGG IDLE; loop:2; crossFadeDuration: 1"></a-entity>
    <a-entity  text-geometry="value: Nishanth G; font: #optimerBoldFont; height:.2"   material="color: #B1FC04; src: #texture" position="1 1.5 -4" rotation="0 -50 0" scale="0.5 0.5 0.5 " animation="property: position; to: 2 1.5 -4;  dur: 5000">
      <a-entity text-geometry="value: Software Engineer; font: #optimerBoldFont; height:.2"   material="color: #B1FC04; src: #texture" position="1 -1 -4" rotation="0 0 0" scale="0.5 0.5 0.5"animation="property: position; to: 2 -1 -4;  dur: 5000" ></a-entity></a-entity>
