@@ -386,10 +386,10 @@
     density: 9500, // How many particles will be generated: one particle every n pixels
     dotColor: '#666666',
     lineColor: '#666666',
-    particleRadius: 10, // Dot size
+    particleRadius: 6, // Dot size
     lineWidth: 1,
     curvedLines: false,
-    proximity: 900, // How close two dots need to be before they join
+    proximity: 100, // How close two dots need to be before they join
     parallax: true,
     parallaxMultiplier: .8, // The lower the number, the more extreme the parallax effect
     onInit: function() {},
