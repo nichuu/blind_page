@@ -9,7 +9,6 @@
   <script src="https://cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.1/dist/aframe-extras.min.js" ></script>
   <script src="https://unpkg.com/aframe-event-set-component@3.0.3/dist/aframe-event-set-component.min.js"></script>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" type="text/css">
   <script src="https://unpkg.com/aframe-text-geometry-component@^0.5.0/dist/aframe-text-geometry-component.min.js"></script>
   <script type="text/javascript" src="js/jquery.particleground.js"></script>
     <script type="text/javascript" src="js/demo.js"></script>
@@ -43,8 +42,9 @@
     <a-scene cursor="rayOrigin: mouse">
 
      <a-assets>
-       <a-asset-item id="bug" response-type="arraybuffer" src="skull/bug.glb"></a-asset-item>
-       <a-asset-item id="statue" response-type="arraybuffer" src="skull/statue.glb"></a-asset-item>
+      <a-asset-item id="st1" src="dancing_stormtrooper/scene.gltf"></a-asset-item>
+       <a-asset-item id="bug" response-type="arraybuffer" src="skull/st1.glb"></a-asset-item>
+       <a-asset-item id="statue" response-type="arraybuffer" src="skull/st1.glb"></a-asset-item>
        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/ngokevin/kframe/master/components/text-geometry/lib/helvetiker_regular.typeface.json"></a-asset-item>
     </a-assets>
 
@@ -52,13 +52,18 @@
 
 
 
- <a-entity   position="0 1 -100" rotation="0 0 0"  scale=".9 .9 .9" gltf-model="#bug" animation="property: position; to: 0 1 -8;  dur: 9000"  animation-mixer="clip:SMALL BUGG IDLE; loop:2; crossFadeDuration: 1"link="highlighted: true; highlightedColor:#000000; backgroundColor: red; href: https://nichuu.github.io/it_all_bigins_here/; titleColor: black; title: Back to website;image: https://nichuu.github.io/it_all_bigins_here/  "></a-entity>
-   <a-entity  text-geometry="value: The Blind Page; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-3 4 -6" rotation="12 0 0" scale="1.5 1.5 1.5"></a-entity>
-   <a-entity  text-geometry="value: By Nishanth G; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="2 3 -6" rotation="0 -10 0" scale="0.5 0.5 0.5"></a-entity>
 
-     <a-entity text-geometry="value:;  font: #optimerBoldFont; height:.2"   material="color: #B1FC04; src: #texture" position="1 -1 -4" rotation="0 0 0" scale="0.5 0.5 0.5"></a-entity>
-        <a-entity  text-geometry="value:Between stimulus and response, there is a space.  ; font: #optimerBoldFont; height:.2" material="color: #D5A400  ; src: #texture"    position="-20 0 11" rotation="0 100 0" scale="1.5 1.5 1.5 "></a-entity>
-        <a-entity  text-geometry="value:power to choose our response. ; font: #optimerBoldFont; height:.2" material="color: #D5A400  ; src: #texture"    position="-15 -1.5 14"rotation="0 100 0" scale="1.5 1.5 1.5 "></a-entity>
+ <!--<a-entity gltf-model="#st1" animation-mixer="clip:mixamo.com; loop:2; crossFadeDuration: 1"></a-entity> -->
+ <a-entity   position="0 .5 -20" rotation="0 0 0"  scale=".9 .9 .9" gltf-model="#bug" animation="property: position; to: 0 0 -4;  dur: 9000"  animation-mixer="clip:mixamo.com; loop:2; crossFadeDuration: 1"link="highlighted: true; highlightedColor:#000000; backgroundColor: red; href: https://nichuu.github.io/it_all_bigins_here/; titleColor: black; title: Back to website;image: https://nichuu.github.io/it_all_bigins_here/  "></a-entity>
+   <a-entity  text-geometry="value: Nishanth G; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 4 -5" rotation="12 15 0" scale=".5 .5 .5"></a-entity>
+   <a-entity  text-geometry="value: </Software Engineer>; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 3.6 -5" rotation="5 20 0" scale=".3 .3 .3"></a-entity>
+    <a-entity  text-geometry="value: --> Linked_In; font: #optimerBoldFont; height:.25"   mylink="href: https://www.linkedin.com/in/nishanth-gandhi-350b54165/;" material="color: #04DAFC; src: #texture" position="-4 2.5 -6" rotation="12 20 0" scale=".6 .6 .6"></a-entity>
+    <a-entity  text-geometry="value: --> Instagram; font: #optimerBoldFont; height:.25"   mylink="href: https://www.instagram.com/nishanth_gandhi/?hl=en;" material="color: #bf00ff; src: #texture" position="-5 1 -6" rotation="-12 20 0" scale=".7 .7 .7"></a-entity>
+   <a-entity  text-geometry="value: ; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="2 3 -6" rotation="0 -10 0" scale="0.7 0.7 0.7"></a-entity>
+   <a-entity  text-geometry="value: --> Work & Experience; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/portfolio/;" material="color: #7362FF; src: #texture" position="1.5 3 -5" rotation="0 -20 0" scale=".5 .5 .5"></a-entity>
+   <a-entity  text-geometry="value: --> Medium; font: #optimerBoldFont; height:.25"   mylink="href: https://nishanth-g.medium.com/;" material="color: #00ffaa; src: #texture" position="1.5 1.7 -5" rotation="1 -30 -1" scale=".5 .5 .5"></a-entity>
+   <a-entity  text-geometry="value: --> Resume/CV; font: #optimerBoldFont; height:.25"   mylink="href: G_NISHANTH_Resume.pdf;" material="color: #B1FC04; src: #texture" position="-1 -.75 -5" rotation="-15 0 0" scale=".5 .5 .5"></a-entity>
+        
 
    </a-scene>
 
