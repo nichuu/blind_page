@@ -43,7 +43,7 @@
 
      <a-assets>
       <a-asset-item id="st1" src="dancing_stormtrooper/scene.gltf"></a-asset-item>
-       <a-asset-item id="bug" response-type="arraybuffer" src="skull/st1.glb"></a-asset-item>
+       <a-asset-item id="bug" response-type="arraybuffer" src="skull/bug.glb"></a-asset-item>
        <a-asset-item id="statue" response-type="arraybuffer" src="skull/st1.glb"></a-asset-item>
        <a-asset-item id="optimerBoldFont" src="https://rawgit.com/ngokevin/kframe/master/components/text-geometry/lib/helvetiker_regular.typeface.json"></a-asset-item>
     </a-assets>
@@ -54,14 +54,15 @@
 
 
  <!--<a-entity gltf-model="#st1" animation-mixer="clip:mixamo.com; loop:2; crossFadeDuration: 1"></a-entity> -->
- <a-entity   position="0 .5 -20" rotation="0 0 0"  scale=".9 .9 .9" gltf-model="#bug" animation="property: position; to: 0 0 -4;  dur: 9000"  animation-mixer="clip:mixamo.com; loop:2; crossFadeDuration: 1"link="highlighted: true; highlightedColor:#000000; backgroundColor: red; href: https://nichuu.github.io/it_all_bigins_here/; titleColor: black; title: Back to website;image: https://nichuu.github.io/it_all_bigins_here/  "></a-entity>
-   <a-entity  text-geometry="value: Nishanth G; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 4 -5" rotation="12 15 0" scale=".5 .5 .5"></a-entity>
-   <a-entity  text-geometry="value: </Software Engineer>; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 3.6 -5" rotation="5 20 0" scale=".3 .3 .3"></a-entity>
+ <a-entity   position="-10 .5 -10" rotation="10 20 20"  scale=".2 .2 .2" gltf-model="#bug" animation="property: position; to: -1.4 2.4 -4; dur: 9000"  animation-mixer="clip:SMALL BUGG IDLE; loop:2; crossFadeDuration: 1"link="highlighted: true; highlightedColor:#000000; backgroundColor: red; href: https://nichuu.github.io/it_all_bigins_here/; titleColor: black; title: Back to website;image: https://nichuu.github.io/it_all_bigins_here/  "></a-entity>
+ <a-entity   position="0 .5 -20" rotation="0 0 0"  scale=".9 .9 .9" gltf-model="#st1" animation="property: position; to: 0 0 -4;  dur: 6000"  animation-mixer="clip:mixamo.com; loop:2; crossFadeDuration: 1"link="highlighted: true; highlightedColor:#000000; backgroundColor: red; href: https://nichuu.github.io/it_all_bigins_here/; titleColor: black; title: Back to website;image: https://nichuu.github.io/it_all_bigins_here/  "></a-entity>
+   <a-entity  text-geometry="value: Nishanth G; font: #optimerBoldFont; height:.25" animation="property: rotation; to: 360 360 360;  dur: 10000"  mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 4 -5" rotation="12 15 0" scale=".5 .5 .5"></a-entity>
+   <a-entity  text-geometry="value: </Software Engineer>; font: #optimerBoldFont; height:.25" animation="property: rotation; to: 360 360 360;  dur: 10000"  mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="-4 3.6 -5" rotation="5 20 0" scale=".3 .3 .3"></a-entity>
     <a-entity  text-geometry="value: --> Linked_In; font: #optimerBoldFont; height:.25"   mylink="href: https://www.linkedin.com/in/nishanth-gandhi-350b54165/;" material="color: #04DAFC; src: #texture" position="-4 2.5 -6" rotation="12 20 0" scale=".6 .6 .6"></a-entity>
-    <a-entity  text-geometry="value: --> Instagram; font: #optimerBoldFont; height:.25"   mylink="href: https://www.instagram.com/nishanth_gandhi/?hl=en;" material="color: #bf00ff; src: #texture" position="-5 1 -6" rotation="-12 20 0" scale=".7 .7 .7"></a-entity>
+    <a-entity  text-geometry="value: --> Instagram; font: #optimerBoldFont; height:.25" animation="property: position; to: -5 1 -6; dur: 10000"  mylink="href: https://www.instagram.com/nishanth_gandhi/?hl=en;" material="color: #bf00ff; src: #texture" position="-20 0 -10" rotation="-12 20 0" scale=".7 .7 .7"></a-entity>
    <a-entity  text-geometry="value: ; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/it_all_bigins_here/;" material="color: #B1FC04; src: #texture" position="2 3 -6" rotation="0 -10 0" scale="0.7 0.7 0.7"></a-entity>
    <a-entity  text-geometry="value: --> Work & Experience; font: #optimerBoldFont; height:.25"   mylink="href: https://nichuu.github.io/portfolio/;" material="color: #7362FF; src: #texture" position="1.5 3 -5" rotation="0 -20 0" scale=".5 .5 .5"></a-entity>
-   <a-entity  text-geometry="value: --> Medium; font: #optimerBoldFont; height:.25"   mylink="href: https://nishanth-g.medium.com/;" material="color: #00ffaa; src: #texture" position="1.5 1.7 -5" rotation="1 -30 -1" scale=".5 .5 .5"></a-entity>
+   <a-entity  text-geometry="value: --> Medium; font: #optimerBoldFont; height:.25"  animation="property: rotation; to: 360 -30 -1; loop: true; dur: 10000" mylink="href: https://nishanth-g.medium.com/;" material="color: #00ffaa; src: #texture" position="1.5 1.7 -5" rotation="1 -30 -1" scale=".5 .5 .5"></a-entity>
    <a-entity  text-geometry="value: --> Resume/CV; font: #optimerBoldFont; height:.25"   mylink="href: G_NISHANTH_Resume.pdf;" material="color: #B1FC04; src: #texture" position="-1 -.75 -5" rotation="-15 0 0" scale=".5 .5 .5"></a-entity>
         
 
